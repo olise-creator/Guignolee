@@ -52,9 +52,11 @@ namespace Guignolee.ViewModels
             get { return _don.Contenu; }
             set
             {
+                // TODO: Appliquer la validation avec && Validate(value)
                 if (_don.Contenu != value )
                 {
                     _don.Contenu = value;
+                    // TODO: Notifier l'interface qu'une propriété à changé avec RaisePropertyChanged();
                 }
                 else
                 {

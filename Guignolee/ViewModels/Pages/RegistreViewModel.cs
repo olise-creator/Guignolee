@@ -62,6 +62,7 @@ namespace Guignolee.ViewModels.Pages
         }
         public void Supprimer()
         {
+            // TODO: Il est demandé de remettre le don, i.e. DonSelectionne.EstRemis = true (voir la solution complète)
             Dons.Remove(DonSelectionne);
 
         }
@@ -75,6 +76,8 @@ namespace Guignolee.ViewModels.Pages
         public void ChargerDonnees()
         {
             // TODO: À compléter selon la documentation de la méthode.
+            // TODO: Utiliser les méthodes linq pour filtrer et trier (https://projets420.gitbook.io/asp.net/420-3p3-dev.-applications-windows/c/les-expression-lambda#exercice-methodes-linq-et-expression-lambda)
+
             Dons.Clear();
             foreach(Don don in _donDataProvider.GetDons())
             {
@@ -84,10 +87,11 @@ namespace Guignolee.ViewModels.Pages
             }
             
             
-
             DonSelectionne = null;
+            // TODO: Question 1 : RaisePropertyChanged pour notifier que la propriété EtatDons a changé.
+
         }
-        
+
         /// <summary>
         /// Permet d'ajouter le nouveau don du formulaire à la liste des dons à remettre. 
         /// Le don est ajouté au fournisseur de données et la liste des dons est rechargée.

@@ -25,6 +25,7 @@ namespace Guignolee.Views
     /// </summary>
     public sealed partial class BlankPage1 : Page
     {
+        // TODO: Le modèle de la vue BlankPage1 est ModifierDonViewModel et non RegistreViewModel
         public RegistreViewModel ViewModel { get; }
         public BlankPage1()
         {

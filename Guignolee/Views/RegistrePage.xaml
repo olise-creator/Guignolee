@@ -108,8 +108,7 @@
                     Background="#A4262C"
                     Click="btnMarquerRemis_Click"
                     Content="Marquer comme remis"
-                    Foreground="White" 
-                    />
+                    Foreground="White" />
             </StackPanel>
 
             <!--  Formulaire d'ajout  -->
@@ -140,14 +139,14 @@
                             <TextBox
                                 Header="Donateur"
                                 PlaceholderText="Prénom Nom"
-                                Text="{x:Bind ViewModel.NouveauDon.Donateur,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                                Text="{x:Bind ViewModel.NouveauDon.Donateur, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                         </StackPanel>
 
                         <StackPanel Grid.Column="1">
                             <TextBox
                                 Header="Contenu du don"
                                 PlaceholderText="Ex. : Conserves de soupe"
-                                Text="{x:Bind ViewModel.NouveauDon.Contenu,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                                Text="{x:Bind ViewModel.NouveauDon.Contenu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                         </StackPanel>
 
                         <StackPanel Grid.Column="2">
@@ -155,7 +154,7 @@
                                 Header="Quantité"
                                 MaxLength="3"
                                 PlaceholderText="Ex. : 24"
-                                Text="{x:Bind ViewModel.NouveauDon.Quantite,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                                Text="{x:Bind ViewModel.NouveauDon.Quantite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                         </StackPanel>
 
                         <CheckBox
@@ -163,9 +162,7 @@
                             Margin="0,28,0,0"
                             VerticalAlignment="Top"
                             Content="Périssable"
-                            IsChecked="False" 
-                            
-                            />
+                            IsChecked="False" />
 
                         <Button
                             Grid.Column="4"

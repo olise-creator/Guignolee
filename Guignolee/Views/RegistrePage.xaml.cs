@@ -47,12 +47,14 @@ namespace Guignolee.Views
 
         private void btnMarquerRemis_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: À compléter
+            // TODO: Remettre n'est pas supprimer
             ViewModel.Supprimer();
         }
 
         private void btnAjouter_Click(object sender, RoutedEventArgs e)
         {
+            // TODO: Ne pas ajouter si l'objet n'est pas valide
+            // if (ViewModel.NouveauDon.EstValide)
             ViewModel.AjouterDon();
         }
     }
